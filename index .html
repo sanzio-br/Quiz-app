@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz test</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h2{
+            margin-top: 1em;
+        }
+        .quiz-content{
+            border-radius: 5px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 5px rgb(0,0,.1);
+            max-width: 100%;
+            width:300px;
+        }
+        .quiz-header{
+            margin: auto 2.5em;
+        }
+        ul li{
+            list-style: none;
+            padding: 1rem 0;
+        }
+        ul li label{
+            cursor: pointer;
+        }
+        button{
+            width: 100%;
+            border: none;
+            outline: none;
+            bottom: 0;
+            font-size: 1.1rem;
+            padding: .7rem;
+            background: rgb(191, 0, 255);
+        }
+    </style>
+    <div class="quiz-content" id="quiz">
+        <div class="quiz-header">
+            <h2 class="question">Question</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="choise">
+                    <label for="a" id="a_text">Choise</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="choise">
+                    <label for="b" id="b_text">Choise</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="choise">
+                    <label for="c" id="c_text">Choise</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="choise">
+                    <label for="d" id="d_text">Choise</label>
+                </li>
+            </ul>
+            <div class="ans"></div>
+        </div>
+        <button class="submit">Submit</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
